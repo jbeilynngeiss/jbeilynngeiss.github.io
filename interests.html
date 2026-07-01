@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beyond the Lab | J. Beilynn Geiss</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --surface: #111827;
+        --primary: #38bdf8;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, var(--bg), #1e293b);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 24px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      nav {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        color: var(--text);
+        text-decoration: none;
+        margin-left: 16px;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+
+      .hero {
+        padding: 40px 0 60px;
+      }
+
+      .hero h1 {
+        font-size: 2.6rem;
+        margin: 0 0 12px;
+      }
+
+      .hero p { color: var(--muted); font-size: 1.05rem; }
+
+      .card {
+        background: rgba(255,255,255,0.06);
+        padding: 20px;
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.08);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        margin-top: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 16px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .btn-primary { background: var(--primary); color: #082f49; }
+      .btn-secondary { border: 1px solid var(--primary); color: var(--text); }
+
+      footer {
+        text-align: center;
+        padding: 24px 20px 40px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 700px) {
+        nav { flex-direction: column; gap: 10px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <strong>J. Beilynn Geiss</strong>
+        <div>
+          <a href="index.html">Home</a>
+          <a href="interests.html">Beyond the Lab</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Beyond the Lab</h1>
+        <p>Leadership and impact through athletics, residential life, and mentorship.</p>
+        <a class="btn btn-secondary" href="index.html">Back to Home</a>
+      </section>
+
+      <section>
+        <div class="card">
+          <h2>Leadership & Impact</h2>
+          <p>Competing at the collegiate level while fostering a supportive campus community.</p>
+        </div>
+
+        <div class="card">
+          <h3>Skidmore College Varsity Athletics</h3>
+          <p><em>Tennis and Crew Athlete</em> | Aug 2022 – May 2026</p>
+          <p>Maintained high academic performance while competing in varsity athletics and contributing to team culture.</p>
+        </div>
+
+        <div class="card">
+          <h3>Residential Life | Skidmore College</h3>
+          <p><em>Resident Assistant & Community Assistant</em> | Aug 2023 – May 2026</p>
+          <p>Created inclusive living environments and supported student development through peer leadership.</p>
+        </div>
+
+        <div class="card">
+          <h3>First Year Experience | Skidmore College</h3>
+          <p><em>Peer Mentor</em> | Aug 2025 – May 2026</p>
+          <p>Guided first-year students through academic transition, community-building, and campus resources.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 J. Beilynn Geiss
+    </footer>
+  </body>
+</html>
