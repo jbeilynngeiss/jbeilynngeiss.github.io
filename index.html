@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J. Beilynn Geiss | Personal Website</title>
+    <style>
+      :root {
+        --bg: #0b3220;
+        --surface: #112d20;
+        --primary: #86c57f;
+        --text: #f8fafc;
+        --muted: #cbdcca;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      a:focus-visible,
+      .btn:focus-visible,
+      .skip-link:focus-visible {
+        outline: 3px solid var(--primary);
+        outline-offset: 3px;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 12px 16px;
+        background: var(--text);
+        color: #082f49;
+        z-index: 1000;
+        transform: translateY(-120%);
+        transition: transform 0.2s ease;
+      }
+
+      .skip-link:focus,
+      .skip-link:active {
+        transform: translateY(0);
+      }
+
+      header {
+        padding: 24px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      nav {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        color: var(--text);
+        text-decoration: none;
+        margin-left: 16px;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+
+      .hero-banner {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        align-items: start;
+        padding: 20px 0 60px;
+      }
+
+      .hero h1 {
+        font-size: 2.6rem;
+        margin: 0 0 12px;
+      }
+
+      .hero p { color: var(--muted); font-size: 1.05rem; }
+
+      .hero > div:last-child {
+        display: grid;
+        gap: 24px;
+      }
+
+      .quick-intro-box {
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.16);
+        border-radius: 20px;
+        padding: 24px;
+      }
+
+      .profile-photo {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 24px;
+        display: block;
+        margin: 0;
+      }
+
+      .card {
+        background: rgba(255,255,255,0.06);
+        padding: 20px;
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.08);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      }
+
+      .buttons {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 16px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .btn-primary { background: var(--primary); color: #082f49; }
+      .btn-secondary { border: 1px solid var(--primary); color: var(--text); }
+
+      section { margin-top: 36px; }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .stacked-cards {
+        display: grid;
+        gap: 16px;
+      }
+
+      .card-grid-three {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .grid div,
+      .card-grid-three div { padding: 16px; }
+      .grid h3,
+      .card-grid-three h3 { margin-top: 0; }
+
+      footer {
+        text-align: center;
+        padding: 24px 20px 40px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 700px) {
+        .hero, .grid { grid-template-columns: 1fr; }
+        nav { flex-direction: column; gap: 10px; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+      <nav aria-label="Primary navigation">
+        <strong>J. Beilynn Geiss</strong>
+        <div>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#work-history">Work History</a>
+          <a href="#interests">Beyond the Lab</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div>
+          <h1>Hi, I'm J. Beilynn Geiss.</h1>
+          <p>I am a Magna Cum Laude Physics graduate and Phi Beta Kappa member with a strong background in experimental characterization and computational Molecular Dynamics. Driven by the philosophy that "Creative Thought Matters," I am eager to apply my analytical precision and collaborative leadership to drive innovation in the clean energy and pharmaceutical sectors.</p>
+          <div class="buttons">
+            <a class="btn btn-primary" href="#experience">View Experience</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/j-beilynn-geiss/" target="_blank" rel="noopener noreferrer" aria-label="Opens my LinkedIn profile in a new tab">LinkedIn</a>
+          </div>
+        </div>
+                  <img src="profile.jpg" alt="J. Beilynn Geiss" class="profile-photo" style="border:none;" />
+        </div>
+        <div>
+          <div class="quick-intro-box">
+            <h3>Quick Intro</h3>
+            <p>Physics Graduate • Experimental Scientist • Computational Researcher</p>
+            <p>Driven by the belief that creative thought matters and eager to innovate in clean energy and pharmaceuticals.</p>
+          </div>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Magna Cum Laude Physics graduate and Phi Beta Kappa member with specialized experience in high-resolution experimental characterization and computational Molecular Dynamics. My work combines analytical rigor, technical precision, and collaborative leadership.</p>
+      </section>
+
+      <section class="card-grid-three">
+        <div class="card">
+          <h3>Education</h3>
+          <p><strong>Skidmore College</strong> | Saratoga Springs, NY</p>
+          <p><strong>B.A. in Physics</strong> | <strong>GPA: 3.9 / 4.0</strong></p>
+          <p><em>May 2026</em></p>
+          <p><strong>Honors:</strong> Phi Beta Kappa, Physics honor society, German honor society, Mathematics honor society.</p>
+        </div>
+        <div class="card">
+          <h3>Targeting</h3>
+          <p><strong>Materials Scientist · Research Associate · Quality Control Specialist</strong></p>
+          <p><em>Full-time roles starting July 2026</em></p>
+        </div>
+        <div class="card">
+          <h3>Track Record</h3>
+          <p><strong>3 Research Positions · 1 Senior Thesis · 4 Years Varsity Athletics</strong></p>
+          <p><strong>Nanotechnology · Biophysics · Materials Characterization · Leadership</strong></p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Toolbox</h3>
+        <p> A blend of hands-on laboratory expertise and computational modeling skills developed through intensive undergraduate research.</p>
+        <h4>Technical & Lab</h4>
+        <ul>
+          <li>Microscopy: Transmission Electron Microscopy (TEM), Electron Diffraction.</li>
+          <li>Spectroscopy: UV-Vis, IR Spectroscopy, Quantum Chemistry & Spectroscopy.</li>
+          <li>Characterization: Cyclic Voltammetry, Sample Preparation, 3D Printing.</li>
+          <li>Documentation: SOP Development, Quantitative Data Analysis, Technical Writing.</li>
+        </ul>
+        <h4>Programming & Data</h4>
+        <ul>
+          <li>Languages: Python (NumPy, Pandas, Matplotlib), C++, MATLAB (basic), Mathematica (basic).</li>
+          <li>Tools: Molecular Dynamics Simulations, DigitalMicrograph, PETS2, Bruker software, Excel.</li>
+        </ul>
+        <h4>Languages</h4>
+        <ul>
+          <li>English: Native</li>
+          <li>German: Intermediate</li>
+          <li>Spanish: Biliteracy Certification</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Experimental Characterization</h3>
+            <p>Experienced in operating Transmission Electron Microscopes (TEM) and conducting high-resolution analysis with strong attention to detail.</p>
+          </div>
+          <div class="card">
+            <h3>Laboratory Operations</h3>
+            <p>Authored comprehensive Standard Operating Procedures (SOPs) that improved laboratory efficiency and data reproducibility.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work-history">
+        <h2>Work History</h2>
+        <div class="card">
+          <h3>Department of Chemistry | Colorado State University</h3>
+          <p><em>Undergraduate Research Fellow</em> | May 2025 – Aug 2025</p>
+          <p>Contributed to experimental materials science research through microscopy, data analysis, and laboratory protocol execution.</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>Computational Biophysics Lab | Skidmore College</h3>
+            <p><em>Lab Member & Senior Mentor</em> | Sept 2023 – May 2026</p>
+            <p>Supported computational biophysics projects, mentored junior students, and helped advance research in molecular dynamics.</p>
+            <img src="IMG_3815.JPG" alt="Computational Biophysics Lab" class="profile-photo" />
+          </div>
+          <div class="card">
+            <h3>Analytical Research Core | Colorado State University</h3>
+            <p><em>Undergraduate Research Assistant</em> | June 2024 – Aug 2024</p>
+            <p>Assisted with technical protocol development and analytical research workflows in a collaborative lab environment.</p>
+            <img src="IMG_2824.jpeg" alt="Analytical Research Core" class="profile-photo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="interests">
+        <h2>Beyond the Lab</h2>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>Skidmore College Varsity Athletics</h3>
+            <p><em>Tennis and Crew Athlete</em> | Aug 2022 – May 2026</p>
+            <p>Maintained high academic performance while competing in varsity athletics and contributing to team culture.</p>
+            <div class="athletics-images">
+              <img src="Geiss4352.JPG" alt="J. Beilynn Geiss rowing" class="profile-photo" />
+              <img src="DSC_1437.JPG" alt="J. Beilynn Geiss tennis" class="profile-photo" />
+            </div>
+          </div>
+          <div class="stacked-cards">
+            <div class="card">
+              <h3>Residential Life | Skidmore College</h3>
+              <p><em>Resident Assistant & Community Assistant</em> | Aug 2023 – May 2026</p>
+              <p>Created inclusive living environments and supported student development through peer leadership.</p>
+            </div>
+            <div class="card">
+              <h3>First Year Experience | Skidmore College</h3>
+              <p><em>Peer Mentor</em> | Aug 2025 – May 2026</p>
+              <p>Guided first-year students through academic transition, community-building, and campus resources.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/j-beilynn-geiss/" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">LinkedIn</a>.</p>
+        <a class="btn btn-primary" href="mailto:beigeiss@icloud.com">Email Me</a>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 J. Beilynn Geiss
+    </footer>
+  </body>
+</html>
