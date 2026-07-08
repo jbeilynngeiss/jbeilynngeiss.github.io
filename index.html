@@ -97,13 +97,6 @@
         gap: 24px;
       }
 
-      .quick-intro-box {
-        background: rgba(255,255,255,0.08);
-        border: 1px solid rgba(255,255,255,0.16);
-        border-radius: 20px;
-        padding: 24px;
-      }
-
       .profile-photo {
         width: 100%;
         max-width: 100%;
@@ -139,6 +132,9 @@
       .btn-secondary { border: 1px solid var(--primary); color: var(--text); }
 
       section { margin-top: 36px; }
+      #about {
+        margin-top: 56px;
+      }
       .grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -183,6 +179,7 @@
           <a href="#experience">Experience</a>
           <a href="#work-history">Work History</a>
           <a href="#interests">Beyond the Lab</a>
+          <a href="resume.html">Resume</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -191,21 +188,16 @@
     <main id="main-content">
       <section class="hero">
         <div>
-          <h1>Hi, I'm J. Beilynn Geiss.</h1>
+          <h1>Hi!</h1>
+          <h1>I'm J. Beilynn Geiss.</h1>
           <p>I am a Magna Cum Laude Physics graduate and Phi Beta Kappa member with a strong background in experimental characterization and computational Molecular Dynamics. Driven by the philosophy that "Creative Thought Matters," I am eager to apply my analytical precision and collaborative leadership to drive innovation in the clean energy and pharmaceutical sectors.</p>
           <div class="buttons">
-            <a class="btn btn-primary" href="#experience">View Experience</a>
+            <a class="btn btn-primary" href="resume.html">View Resume</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/j-beilynn-geiss/" target="_blank" rel="noopener noreferrer" aria-label="Opens my LinkedIn profile in a new tab">LinkedIn</a>
           </div>
         </div>
                   <img src="profile.jpg" alt="J. Beilynn Geiss" class="profile-photo" style="border:none;" />
         </div>
-        <div>
-          <div class="quick-intro-box">
-            <h3>Quick Intro</h3>
-            <p>Physics Graduate • Experimental Scientist • Computational Researcher</p>
-            <p>Driven by the belief that creative thought matters and eager to innovate in clean energy and pharmaceuticals.</p>
-          </div>
       </section>
 
       <section id="about">
@@ -231,6 +223,12 @@
           <p><strong>3 Research Positions · 1 Senior Thesis · 4 Years Varsity Athletics</strong></p>
           <p><strong>Nanotechnology · Biophysics · Materials Characterization · Leadership</strong></p>
         </div>
+      </section>
+
+      <section class="card">
+        <h3>Publications</h3>
+        <p>"Quantifying chiral handedness of core–shell inorganic nanotubes <em>via</em> electron microscopy and diffraction"</p>
+        <p><a href="https://pubs.rsc.org/en/content/articlelanding/2026/nr/d6nr00074f" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">https://pubs.rsc.org/en/content/articlelanding/2026/nr/d6nr00074f</a></p>
       </section>
 
       <section class="card">
@@ -276,6 +274,16 @@
           <h3>Department of Chemistry | Colorado State University</h3>
           <p><em>Undergraduate Research Fellow</em> | May 2025 – Aug 2025</p>
           <p>Contributed to experimental materials science research through microscopy, data analysis, and laboratory protocol execution.</p>
+          <div class="grid" style="margin-top: 16px; gap: 16px;">
+            <div>
+              <img src="TEM_NT.jpg" alt="TEM image of WS2 nanotube" class="profile-photo" />
+              <p style="margin-top: 8px; color: var(--muted); font-size: 0.95rem;">TEM image of individual tungsten disulfide (WS2) nanotube captured by Dr. Roy Geiss in the Analytical Research Core.</p>
+            </div>
+            <div>
+              <img src="ED_NT.jpg" alt="Electron diffraction image of WS2 nanotube" class="profile-photo" />
+              <p style="margin-top: 8px; color: var(--muted); font-size: 0.95rem;">Electron diffraction image of WS2 nanotube captured by Dr. Roy Geiss in the Analytical Research Core.</p>
+            </div>
+          </div>
         </div>
         <div class="grid">
           <div class="card">
@@ -289,16 +297,8 @@
             <h3>Analytical Research Core | Colorado State University</h3>
             <p><em>Undergraduate Research Assistant</em> | June 2024 – Aug 2024</p>
             <p>Assisted with technical protocol development and analytical research workflows in a collaborative lab environment.</p>
-            <div class="grid" style="margin-top: 16px; gap: 16px;">
-              <div>
-                <img src="TEM_NT.jpg" alt="TEM image of WS2 nanotube" class="profile-photo" />
-                <p style="margin-top: 8px; color: var(--muted); font-size: 0.95rem;">TEM image of individual tungsten disulfide (WS2) nanotube captured by Dr. Roy Geiss in the Analytical Research Core.</p>
-              </div>
-              <div>
-                <img src="ED_NT.jpg" alt="Electron diffraction image of WS2 nanotube" class="profile-photo" />
-                <p style="margin-top: 8px; color: var(--muted); font-size: 0.95rem;">Electron diffraction image of WS2 nanotube captured by Dr. Roy Geiss in the Analytical Research Core.</p>
-              </div>
-            </div>
+            <img src="SCED.jpeg" alt="Single crystal electron diffraction image of Mn4Ge" class="profile-photo" />
+            <p style="margin-top: 8px; color: var(--muted); font-size: 0.95rem;">Single crystal electron diffraction image of Mn4Ge captured by Dr. Roy Geiss in the Analytical Research Core.</p>
           </div>
         </div>
       </section>
